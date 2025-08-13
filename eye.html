@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personality Cartoon Eyes</title>
+  <style>
+    body {
+      background: #f9f9f9;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .face {
+      display: flex;
+      gap: 20px;
+    }
+
+    .eye-wrapper {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .eye {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: white;
+      border: 2px solid black;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .iris {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: black;
+      border-radius: 50%;
+      top: 7px;
+      left: 7px;
+      transition: top 0.3s ease, left 0.3s ease;
+    }
+
+    .eyelid {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: white;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      transform: scaleY(0);
+      transform-origin: top;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .blink {
+      animation: blink 0.25s ease-in-out forwards;
+    }
+
+    @keyframes blink {
+      0%   { transform: scaleY(0); }
+      50%  { transform: scaleY(1); }
+      100% { transform: scaleY(0); }
+    }
+  </style>
+</head>
+<body>
+<div class="face">
+  <div class="eye-wrapper" id="wrapper-left">
+    <div class="eye">
+      <div class="iris" id="iris-left"></div>
+      <div class="eyelid" id="eyelid-left"></div>
+    </div>
+  </div>
+  <div class="eye-wrapper" id="wrapper-right">
+    <div class="eye">
+      <div class="iris" id="iris-right"></div>
+      <div class="eyelid" id="eyelid-right"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const irisLeft = document.getElementById('iris-left');
+  const irisRight = document.getElementById('iris-right');
+  const eyelidLeft = document.getElementById('eyelid-left');
+  const eyelidRight = document.getElementById('eyelid-right');
+  const wrapperLeft = document.getElementById('wrapper-left');
+  const wrapperRight = document.getElementById('wrapper-right');
+
+  let lastX = 0;
+  let lastY = 0;
+
+  function randomWiggle() {
+    // Occasionally move with personality
+    const radius = 5;
+
+    // Use "personalities": curious, bored, surprised
+    const personality = Math.random();
+
+    let x, y;
+
+    if (personality < 0.3) {
+      // Curious - quick dart
+      x = Math.random() * radius * 2 - radius;
+      y = Math.random() * radius * 2 - radius;
+    } else if (personality < 0.6) {
+      // Bored - tiny slow shift
+      x = lastX + (Math.random() - 0.5) * 2;
+      y = lastY + (Math.random() - 0.5) * 2;
+    } else {
+      // Surprised - quick to the top or sides
+      x = (Math.random() > 0.5 ? 1 : -1) * radius;
+      y = (Math.random() > 0.5 ? 1 : -1) * radius;
+    }
+
+    // Limit range
+    x = Math.max(-radius, Math.min(radius, x));
+    y = Math.max(-radius, Math.min(radius, y));
+
+    lastX = x;
+    lastY = y;
+
+    // Move pupils
+    irisLeft.style.left = `${7 + x}px`;
+    irisLeft.style.top = `${7 + y}px`;
+    irisRight.style.left = `${7 + x}px`;
+    irisRight.style.top = `${7 + y}px`;
+
+    // Tilt eyes subtly in direction
+    const angle = Math.atan2(y, x) * (180 / Math.PI);
+    wrapperLeft.style.transform = `rotate(${angle * 0.3}deg)`;
+    wrapperRight.style.transform = `rotate(${angle * 0.3}deg)`;
+
+    // Next movement after a random delay
+    const nextDelay = 1000 + Math.random() * 2000;
+    setTimeout(randomWiggle, nextDelay);
+  }
+
+  function blinkEyes() {
+    eyelidLeft.classList.add('blink');
+    eyelidRight.classList.add('blink');
+    setTimeout(() => {
+      eyelidLeft.classList.remove('blink');
+      eyelidRight.classList.remove('blink');
+    }, 250);
+  }
+
+  function randomBlink() {
+    if (Math.random() > 0.4) blinkEyes();
+    setTimeout(randomBlink, 2000 + Math.random() * 3000);
+  }
+
+  // Start personality wiggle and blinking
+  randomWiggle();
+  randomBlink();
+</script>
+</body>
+</html>
