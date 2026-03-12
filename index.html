@@ -2,175 +2,560 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Denys Tarabanov | Designer and Front-End developer. Canada, Calgary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <meta property="og:title" content="Denys Tarabanov | Designer & Front-End Developer">
-    <meta property="og:description" content="Portfolio of Denys Tarabanov, a experienced creative designer and front-end developer.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tarabanov.info/"> <meta property="og:image" content="https://tarabanov.info/img/og-image.png"> <meta property="og:image:alt" content="Denys Tarabanov's professional portfolio, featuring design and front-end development projects.">
-    <meta property="og:locale" content="en_US">
+    <title>Denys Tarabanov | Designer and Front-End Developer in Calgary</title>
+    <meta name="description" content="Portfolio of Denys Tarabanov, an experienced designer and front-end developer in Calgary, Canada. Selected UI, web, and brand projects.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://tarabanov.info/">
 
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="js/client.js"></script>
-
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Tarabanov" />
     <link rel="manifest" href="site.webmanifest" />
+
+    <meta property="og:site_name" content="Denys Tarabanov">
+    <meta property="og:title" content="Denys Tarabanov | Designer and Front-End Developer">
+    <meta property="og:description" content="Portfolio of Denys Tarabanov, an experienced designer and front-end developer in Calgary, Canada.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tarabanov.info/">
+    <meta property="og:image" content="https://tarabanov.info/img/og-image.png">
+    <meta property="og:image:alt" content="Denys Tarabanov portfolio preview with design and front-end work.">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Denys Tarabanov | Designer and Front-End Developer">
+    <meta name="twitter:description" content="Portfolio of Denys Tarabanov, an experienced designer and front-end developer in Calgary, Canada.">
+    <meta name="twitter:image" content="https://tarabanov.info/img/og-image.png">
+    <meta name="twitter:image:alt" content="Denys Tarabanov portfolio preview with design and front-end work.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Denys Tarabanov",
+        "jobTitle": "Designer and Front-End Developer",
+        "url": "https://tarabanov.info/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Calgary",
+            "addressCountry": "CA"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Denys Tarabanov",
+        "url": "https://tarabanov.info/"
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+
+    <script src="js/client.js"></script>
+
 </head>
 <body>
-<div class="wrap">
-
-    <div class="burger-container mobile-only">
-        Menu <div class="burger"></div>
+<div class="preloader" aria-busy="true">
+    <div class="preloader__status" role="status" aria-label="Loading">
+        <span class="preloader__spinner" aria-hidden="true"></span>
+    </div>
+    <div class="preloader__container">
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="img/denys-tarabanov-designer.svg" alt="">
+        </div>
     </div>
 </div>
 <div class="page">
-    <header id="home">
+    <div class="blind"></div>
+    <header class="header">
         <div class="wrap">
-            <div class="social desktop-only">
-                <a href="https://www.linkedin.com/in/tarabanov/" target="_blank" class="social__item ico ico_linkedin"></a>
-                <a href="https://www.behance.net/DenisTarabanov" target="_blank" class="social__item ico ico_behance"></a>
-                <a href="https://dribbble.com/tarabanov" target="_blank" class="social__item ico ico_dribble"></a>
+            <div class="burger-container">
+                <span class="burger__label">menu</span>
+                <div class="burger">
+                    <div class="burger__icon burger__icon_top"></div>
+                    <div class="burger__icon burger__icon_bottom"></div>
+                </div>
             </div>
-            <nav class="desktop-only">
-                <a href="#about-me" class="nav__item">About me</a>
-                <a href="#experience" class="nav__item">Experience</a>
-                <a href="#portfolio" class="nav__item">Portfolio</a>
-                <a href="#resume" class="nav__item">Resume</a>
-                <a href="#contact-me" class="nav__item">Contact me</a>
-            </nav>
-            <h1 class="logo">
-                <a href="#">
-                    <span class="eye-container">
-                        <span class="eye">
-                            <span class="eye__pupil" ></span>
-                            <span class="eye__lid"></span>
-                        </span>
-                        <span class="eye">
-                            <span class="eye__pupil"></span>
-                            <span class="eye__lid"></span>
-                        </span>
-                    </span>Tarabanov
-                </a>
-            </h1>
+            <h1 class="logo"><a href="#home">Denys<br>Tarabanov</a></h1>
         </div>
+        <div class="header__bg"></div>
     </header>
-    <div class="welcome">
+    <div class="page__inner" id="smooth-wrapper">
+        <div id="smooth-content">
+            <section class="section hero" id="home">
+                <div class="wrap">
+                    <div class="hero__label">Designer, Code Tinkerer</div>
+                    <div class="hero__text">
+                        15 years of <br class="desktop-only"> making things
+                    </div>
+                    <div class="hero__text">
+                        <img class="ico-eye" src="img/eye.gif" alt="">look
+                        <br class="mobile-only">better
+                        <br class="mobile-only">than they did before
+                    </div>
+                    <div class="hero__label"><span class="ico ico-canada"></span>Calgary, Canada</div>
+                </div>
+                <div class="video-bg">
+                    <video preload autoplay muted playsinline loop poster="">
+                        <source src="img/bg-video-2.mp4" type="video/mp4">
+                        <source src="img/bg-video-2.webm" type="video/webm">
+                    </video>
+                </div>
+            </section>
+        
+            <div class="wrap">
+                <section class="section about" id="about">
+                    
+                        <div class="pic">
+                            <img class="pic__object" src="img/tarabanov-1-denys.jpg" alt="Tarabanov Denys Designer">
+                        </div>
+                        <div class="about__info">
+                            <div class="about__title from-blur">
+                                I design interfaces, build websites, lay out print stuff, and pretend to know what kerning is. I
+                                speak fluent Adobe, dabble in JavaScript, and do cool stuff with CSS.
+                            </div>
+                            <div class="about__text from-blur">
+                                <p>
+                                    Wix, Tilda, WordPress, or cousin’s homemade CMS I can make it look good, work right and
+                                    (usually) deliver on time.
+                                </p>
+                                <p>
+                                    Give me Adobe, Figma, Sketch, Framer, Gimp – I’ll get the job done. Throw in a bit of Stable
+                                    Diffusion or whatever AI tool is trending this week, and I’ll figure it out.
+                                </p>
+                            </div>
+                        </div>            
+                </section>    
+            </div>        
+            <section class="section">
+                <div class="inline-info">
+                    <div class="inline-info__wrap">
+                        <div class="inline-info__line">
+                            If it has a canvas and a save button, I can probably work with it.
+                        </div>
+                    </div>
+                    <div class="inline-info__visual">
+                        <div class="inline-info__icons" aria-hidden="true">
+                            <img class="inline-info__icon" src="img/app-ae.png" alt="">
+                            <img class="inline-info__icon" src="img/app-ai.png" alt="">
+                            <img class="inline-info__icon" src="img/app-dn.png" alt="">
+                            <img class="inline-info__icon" src="img/app-exp.png" alt="">
+                            <img class="inline-info__icon" src="img/app-figma.png" alt="">
+                            <img class="inline-info__icon" src="img/app-framer.png" alt="">
+                            <img class="inline-info__icon" src="img/app-id.png" alt="">
+                            <img class="inline-info__icon" src="img/app-photoshop.png" alt="">
+                            <img class="inline-info__icon" src="img/app-sketch.png" alt="">
+                            <img class="inline-info__icon" src="img/app-webflow.png" alt="">
+                            <img class="inline-info__icon" src="img/app-webstorm.png" alt="">
+                        </div>
+                        <div class="tarabanov-denys">
+                            <img class="tarabanov-denys__pic" src="img/tarabanov-2-denys.png" alt="Denys Tarabanov">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_experience" id="experience">
+                <div class="wrap">
+                    <div class="experience">
+                        <div class="years mobile-only">
+                            <div class="years__item">
+                                <div class="years__number">
+                                    <div class="years__switcher">2</div>
+                                    <div class="years__switcher">2</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">0</div>
+                                    <div class="years__switcher">0</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">1</div>
+                                    <div class="years__switcher">1</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">0</div>
+                                    <div class="years__switcher">0</div>
+                                </div>
+                            </div>
+                            <div class="years__item">
+                                <div class="years__number">
+                                    <div class="years__switcher">2</div>
+                                    <div class="years__switcher">2</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">0</div>
+                                    <div class="years__switcher">0</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">2</div>
+                                    <div class="years__switcher">2</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">6</div>
+                                    <div class="years__switcher">6</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__side from-blur">
+                            <h2 class="title">Experience</h2>
+                            <ul>
+                                <li class="experience__item">
+                                    <span class="experience__role">Head of Design</span> at
+                                    <a href="https://recycle-app.com/en" target="_blank" class="external-link">Recycle <span class="ico ico-external"></span></a>
+                                    <div class="experience__term">Sep 2022 - Present (2 yrs 11 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">MICE and Brand Designer</span> at
+                                    <a href="http://home-games.io" target="_blank" class="external-link">Home Games<span class="ico ico-external"></span></a>
+                                    <div class="experience__term">Oct 2021 - May 2025 (3 yrs 8 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">General Manager</span> at
+                                    <a href="https://www.linkedin.com/company/game-station-academy" target="_blank" class="external-link">Game Station Academy <span class="ico ico-external"></span></a>
+                                    <div class="experience__term">Feb 2021 - Oct 2021 (9 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">UX Designer / UI Designer</span> at
+                                    <a href="https://www.respeecher.com" target="_blank" class="external-link">Respeecher <span class="ico ico-external"></span></a>
+                                    <div class="experience__term">Mar 2020 - Feb 2021 (1 yr)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">UI Designer / UX Designer</span> at
+                                    <a href="https://www.elastic.io/" target="_blank" class="external-link">elastic.io <span class="ico ico-external"></span></a>
+                                    <div class="experience__term">Apr 2017 - Apr 2019 (2 yrs 1 mo)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">UI Designer / UX Designer</span> at
+                                    <a href="https://www.linkedin.com/company/eforb/" target="_blank" class="experience__company external-link">Eforb <span class="ico ico-external"></span></a>
+                                    <div class="experience__term">Dec 2014 to Apr 2017 (2 yrs 5 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">Interface Developer</span> at
+                                    <a href="https://www.linkedin.com/company/eforb/" target="_blank" class="experience__company external-link">Eforb <span class="ico ico-external"></span></a>
+                                    <div class="experience__term">Feb 2012 - Dec 2014 (2 yrs 11 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">Frontend Developer</span> at <span class="experience__company">techimg</span>
+                                    <div class="experience__term">Oct 2011 - Feb 2012 (5 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">Frontend Developer</span> at <span class="experience__company">intervolga</span>
+                                    <div class="experience__term">Jun 2011 - Oct 2011 (5 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">Frontend Developer</span> at <span class="experience__company">Master-Site</span>
+                                    <div class="experience__term">Oct 2010 - Dec 2010 (3 mos)</div>
+                                </li>
+                                <li class="experience__item">
+                                    <span class="experience__role">Graphic Designer</span> at <span class="experience__company">Arbitration Courts</span>
+                                    <div class="experience__term">Jun 2010 - Aug 2010 (3 mos)</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="years desktop-only" data-speed="0.7">
+                            <div class="years__item">
+                                <div class="years__number">
+                                    <div class="years__switcher">2</div>
+                                    <div class="years__switcher">2</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">0</div>
+                                    <div class="years__switcher">0</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">1</div>
+                                    <div class="years__switcher">1</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">0</div>
+                                    <div class="years__switcher">0</div>
+                                </div>
+                            </div>
+                            <div class="years__item">
+                                <div class="years__number">
+                                    <div class="years__switcher">2</div>
+                                    <div class="years__switcher">2</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">0</div>
+                                    <div class="years__switcher">0</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">2</div>
+                                    <div class="years__switcher">2</div>
+                                </div>
+                                <div class="years__number">
+                                    <div class="years__switcher">6</div>
+                                    <div class="years__switcher">6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-1">
+                    <svg id="mesh-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                        <rect width="100%" height="100%" fill="#0a0a0a"/>
+                        <defs>
+                            <filter id='noiseFilter'>
+                                <feTurbulence type='fractalNoise' baseFrequency='0.60' numOctaves='3' stitchTiles='stitch'/>
+                            </filter>
+                            <rect width='100%' height='100%' filter='url(#noiseFilter)' opacity='0.05' style="mix-blend-mode: overlay;"/>
+                            <radialGradient id="meshGlow" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#575757" />
+                                <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0" />
+                            </radialGradient>
+                        </defs>
+
+                        <circle class="mesh-circle" cx="20%" cy="20%" r="25%" fill="url(#meshGlow)" />
+                        <circle class="mesh-circle" cx="80%" cy="10%" r="30%" fill="url(#meshGlow)" />
+                        <circle class="mesh-circle" cx="10%" cy="50%" r="35%" fill="url(#meshGlow)" />
+                        <circle class="mesh-circle" cx="60%" cy="45%" r="40%" fill="url(#meshGlow)" />
+                        <circle class="mesh-circle" cx="15%" cy="85%" r="25%" fill="url(#meshGlow)" />
+                        <circle class="mesh-circle" cx="85%" cy="85%" r="30%" fill="url(#meshGlow)" />
+                    </svg>
+                </div>
+            </section>
+            <section class="section" id="works">
+                <div class="wrap">
+                    <h2 class="title title_works desktop-only" data-speed="0.4">Works</h2>
+                    <h2 class="title mobile-only from-blur">Works</h2>
+                    <div class="works">
+                        <div class="works__item">
+                            <a target="_blank" href="https://vdoma.foundation/index_en.html" class="works__link">
+                                <video class="works__preview" preload autoplay muted playsinline loop poster="img/works/tarabanov-works-vdoma.jpg">
+                                    <source src="img/works/tarabanov-works-vdoma.mp4" type="video/mp4">
+                                    <source src="img/works/tarabanov-works-vdoma.webm" type="video/webm">
+                                </video>
+                            </a>
+                            <div class="works__title">
+                                Website design and development <span class="txt-mute">for</span>
+                                <a href="https://vdoma.foundation/index_en.html" class="external-link" target="_blank">vdoma.foundation<span class="ico ico-external"></span></a>
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <a target="_blank" href="https://strikergun.com" class="works__link">
+                                <video class="works__preview" preload autoplay muted playsinline loop poster="img/works/tarabanov-works-striker.jpg">
+                                    <source src="img/works/tarabanov-works-striker.mp4" type="video/mp4">
+                                    <source src="img/works/tarabanov-works-striker.webm" type="video/webm">
+                                </video>
+                            </a>
+                            <div class="works__title">
+                                Website design and development <span class="txt-mute">for</span>
+                                <a href="https://strikergun.com" class="external-link" target="_blank">strikergun.com<span class="ico ico-external"></span></a>
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <a target="_blank" href="https://trustrace.com/traceability-playbook-fashion-supply-chains" class="works__link">
+                                <img src="img/works/tarabanov-works-3-trustrace-playbook.jpg"
+                                     alt="Tarabanov portfolio trustrace playbook" class="works__preview">
+                            </a>
+                            <div class="works__title">
+                                Book layout <span class="txt-mute">for</span>
+                                <a href="https://trustrace.com/traceability-playbook-fashion-supply-chains" class="external-link" target="_blank">trustrace.com<span class="ico ico-external"></span></a> playbook
+                            </div>
+                        </div>
+                        <div class="works__item">
+                            <a target="_blank" href="/works" class="works__link">
+                                <span class="works__overlay-title">All my works <span class="ico ico-external"></span></span>
+                                <img src="img/works/tarabanov-works.gif"
+                                     alt="Tarabanov portfolio" class="works__preview">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_resume" id="resume">
+                <div class="wrap">
+                    <h2 class="title title_single">Resume</h2>
+                    <div class="resume" data-speed="1.1">
+                        <a href="#" class="resume__item from-blur" target="_blank">
+                            <span class="external-link external-link_download">Download<span class="ico ico-external"></span></span>
+                            <span class="resume__desc">Tarabanov.pdf</span>
+                        </a>
+                        <a href="#" class="resume__item from-blur" target="_blank">
+                            <span class="external-link">View online<span class="ico ico-external"></span></span>
+                            <span class="resume__desc">Google Docs</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="video-bg">
+                    <video preload autoplay muted playsinline loop poster="">
+                        <source src="img/bg-video-2.mp4" type="video/mp4">
+                        <source src="img/bg-video-2.webm" type="video/webm">
+                    </video>
+                </div>
+            </section>
+            <section class="section">
+                <div class="wrap">
+                    <div class="contacts__title mobile-only from-blur">
+                        Contact<br>me
+                    </div>
+                    <div class="denys-designer from-blur" data-speed="0.8">
+                        <div class="denys-designer__tarabanov">
+                            <img src="img/tarabanov-3-denys.jpg" alt="Denys Tarabanov designer">
+                        </div>
+                        <div class="denys-designer__cta" data-speed="1.1">
+                            Thanks for stopping by — let’s make something cool together
+                            <div class="txt-italic">(or at least mildly impressive)</div>
+                        </div>
+                    </div>
+                    <div class="contacts__title desktop-only from-blur">
+                        Contact<br>me
+                    </div>
+                    <div class="contacts" id="contacts">
+                        <div class="contacts__row">
+                            <div class="contacts__item from-blur">
+                                <div class="contacts__label">Email —</div>
+                                <div class="contacts__value">
+                                    <a href="mailto:denys.tarabanov@gmail.com" target="_blank">
+                                        denys.tarabanov@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts__item from-blur">
+                                <div class="contacts__label">LinkedIn —</div>
+                                <div class="contacts__value">
+                                    <a href="https://www.linkedin.com/in/tarabanov/" class="external-link" target="_blank">
+                                        tarabanov<span class="ico ico-external"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__row">
+                            <div class="contacts__item from-blur">
+                                <div class="contacts__label">Telegram —</div>
+                                <div class="contacts__value">
+                                    <a href="https://t.me/denys_design" class="external-link" target="_blank">
+                                        @denys_design<span class="ico ico-external"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contacts__item from-blur">
+                                <div class="contacts__label">Phone —</div>
+                                <div class="contacts__value">
+                                    <a href="tel:14037149271" target="_blank">
+                                        1 403 714 92 71
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="wrap">
+                    <div class="footer__side">Denys Tarabanov</div>
+                    <span class="copyright">©</span>2026 - <span id="year"></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <nav class="nav">
         <div class="wrap">
-            <div class="photos">
-                <div class="photos__item photos__item_1"><img data-parallax="0.3" src="img/content/denys-tarabanov-1.png" alt="Denys Tarabanov"></div>
-                <div class="photos__item photos__item_2"><img data-parallax="0.4" src="img/content/denys-tarabanov-2.png" alt="Denys Tarabanov"></div>
+            <div class="menu">
+                <a class="menu__item" href="#home">Home</a>
+                <a class="menu__item" href="#experience">Experience</a>
+                <a class="menu__item" href="works/">Works</a>
+                <a class="menu__item" href="#resume">Resume</a>
+                <a class="menu__item" href="#contacts">Contacts</a>
+                <a class="menu__item" href="qr/">Free QR generator</a>
             </div>
-            <div class="welcome__content" data-parallax="0.2">
-                <div class="welcome__message txt-highlight"><span class="ico ico_wave"></span>Hi, I’m Denys Tarabanov, Designer, Code Tinkerer</div>
-                <div class="welcome__message desktop-only"><span class="ico ico_canada"></span>Calgary, Canada</div>
-                <div class="welcome__title">
-                    15 <span class="txt-nbsp">years <span class="ico ico_fire"></span></span> of making things <span class="txt-highlight">look better</span> than they did before.
-                </div>
-                <div class="welcome__message mobile-only"><span class="ico ico_canada"></span>Calgary, Canada</div>
-                <a href="#contact-me" class="hire">Hire me <span class="ico ico_arrow-hire"></span></a>
-            </div>
-        </div>
-    </div>
-    <div class="about" id="about-me">
-        <div class="wrap">
-            <div class="about__pic" data-parallax="0.4">
-                <img src="img/content/denys-tarabanov-4.webp" alt="Denys Tarabanov">
-            </div>
-            <div class="about__content" data-parallax="0.3">
-                <div class="about__title desktop-only_640">
-                    <div class="about__line"><span>If it has a canvas</span><span class="ico about__apps app-photoshop"></span></div>
-                    <div class="about__line"><span class="ico about__apps app-sketch"></span><span class="ico about__apps app-webflow"></span><span>and a save button,</span></div>
-                    <div class="about__line"><span>I can probably</span><span class="ico about__apps app-ai"></span><span class="ico about__apps app-dn"></span><span class="ico about__apps app-framer"></span></div>
-                    <div class="about__line"><span class="ico about__apps app-webstorm"></span><span>work with it.</span></div>
-                </div>
-                <div class="about__title mobile-only_640">
-                    <div class="about__line"><span>If it has a</span><span class="ico about__apps app-photoshop"></span></div>
-                    <div class="about__line"><span class="ico about__apps app-sketch"></span><span class="ico about__apps app-webflow"></span><span>canvas and</span></div>
-                    <div class="about__line"><span>a save button,</span></div>
-                    <div class="about__line"><span>I can probably</span><span class="ico about__apps app-ai"></span></div>
-                    <div class="about__line"><span class="ico about__apps app-webstorm"></span><span class="ico about__apps app-framer"></span><span class="ico about__apps app-dn"></span><span>work with it.</span></div>
-                </div>
-                <div class="about__info">
-                    <p>
-                        I design interfaces, build websites, lay out print stuff, and pretend to know what kerning is. I
-                        speak fluent Adobe, dabble in JavaScript, and do cool stuff with CSS.
-                    </p>
-                    <p>
-                        Wix, Tilda, WordPress, or cousin’s homemade CMS I can make it look good, work right and (usually)
-                        deliver on time.
-                    </p>
-                    <p>
-                        Give me Adobe, Figma, Sketch, Framer, Gimp – I’ll get the job done. Throw in a bit of Stable
-                        Diffusion or whatever AI tool is trending this week, and I’ll figure it out. After 15 years in
-                        design, you stop being picky and start being resourceful.
-                    </p>
-                </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/tarabanov/" target="_blank" class="links__item">LinkedIn<span class="ico ico-external"></span></a>
+                <a href="https://dribbble.com/tarabanov" target="_blank" class="links__item">Dribble<span class="ico ico-external"></span></a>
+                <a href="https://www.behance.net/DenisTarabanov" target="_blank" class="links__item">Behance<span class="ico ico-external"></span></a>
             </div>
         </div>
-    </div>
-    <div style="background: rgba(255,0,0,0.21); height: 1000px"></div>
-    <div style="background: rgba(191,255,0,0.21); height: 1000px"></div>
+        <div class="nav__bg"></div>
+    </nav>
 </div>
-<div class="preloader">
-    <div class="preloader__bg"></div>
-    <div class="preloader__bg preloader__bg_2"></div>
-    <div class="preloader__scene">
-        <div class="blobs">
-            <div class="blob-center"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-            <div class="blob"></div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-            <defs>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-                    <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-            </defs>
-        </svg>
-    </div>
-</div>
-<nav class="mobile-nav">
-    <div class="logo">
-        <a href="#">
-            <span class="eye-container">
-                <span class="eye">
-                    <span class="eye__pupil" ></span>
-                    <span class="eye__lid"></span>
-                </span>
-                <span class="eye">
-                    <span class="eye__pupil"></span>
-                    <span class="eye__lid"></span>
-                </span>
-            </span>
-        </a>
-    </div>
-    <div class="mobile-nav__list">
-        <a href="#about-me" class="nav__item">About me</a>
-        <a href="#experience" class="nav__item">Experience</a>
-        <a href="#portfolio" class="nav__item">Portfolio</a>
-        <a href="#resume" class="nav__item">Resume</a>
-        <a href="#contact-me" class="nav__item">Contact me</a>
-    </div>
-    <div class="me"><img src="img/content/denys-tarabanov-3.png" alt=""></div>
-    <footer class="mobile-nav__footer">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/tarabanov/" target="_blank" class="social__item"><span class="ico ico_linkedin_black"></span> — Linkedin</a>
-            <a href="https://www.behance.net/DenisTarabanov" target="_blank" class="social__item"><span class="ico ico_behance_black"></span> — Behance</a>
-            <a href="https://dribbble.com/tarabanov" target="_blank" class="social__item"><span class="ico ico_dribble_black"></span> — Dribbble</a>
-        </div>
-    </footer>
-</nav>
+
 </body>
 </html>

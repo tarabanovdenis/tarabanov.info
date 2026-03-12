@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>QR Code Generator | Denys Tarabanov</title>
+    <meta name="description" content="Free QR code generator for links, text, and vCards. Create and download PNG QR codes instantly in your browser.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://tarabanov.info/qr/">
+
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Tarabanov" />
+    <link rel="manifest" href="../site.webmanifest" />
+
+    <meta property="og:site_name" content="Denys Tarabanov">
+    <meta property="og:title" content="QR Code Generator | Denys Tarabanov">
+    <meta property="og:description" content="Free QR code generator for links, text, and vCards. Create and download PNG QR codes instantly in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tarabanov.info/qr/">
+    <meta property="og:image" content="https://tarabanov.info/img/og-image.png">
+    <meta property="og:image:alt" content="QR code generator interface for links, text, and vCards.">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QR Code Generator | Denys Tarabanov">
+    <meta name="twitter:description" content="Free QR code generator for links, text, and vCards. Create and download PNG QR codes instantly in your browser.">
+    <meta name="twitter:image" content="https://tarabanov.info/img/og-image.png">
+    <meta name="twitter:image:alt" content="QR code generator interface for links, text, and vCards.">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "QR Code Generator",
+        "url": "https://tarabanov.info/qr/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "All",
+        "isAccessibleForFree": true,
+        "creator": {
+            "@type": "Person",
+            "name": "Denys Tarabanov"
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrambleTextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="../js/client.js"></script>
+
+</head>
+<body>
+<div class="preloader" aria-busy="true">
+    <div class="preloader__status" role="status" aria-label="Loading">
+        <span class="preloader__spinner" aria-hidden="true"></span>
+    </div>
+    <div class="preloader__container">
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+        <div class="preloader__item">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+            <img class="preloader__img" src="../img/denys-tarabanov-designer.svg" alt="">
+        </div>
+    </div>
+</div>
+<div class="page">
+    <div class="blind"></div>
+    <header class="header">
+        <div class="wrap">
+            <div class="burger-container">
+                <span class="burger__label">menu</span>
+                <div class="burger">
+                    <div class="burger__icon burger__icon_top"></div>
+                    <div class="burger__icon burger__icon_bottom"></div>
+                </div>
+            </div>
+            <h1 class="logo"><a href="../">Denys<br>Tarabanov</a></h1>
+        </div>
+        <div class="header__bg"></div>
+    </header>
+    <div class="page__inner" id="smooth-wrapper">
+        <div id="smooth-content">
+            <section class="section hero" id="generator">
+                <div class="wrap">
+<!--                    <div class="hero__label">Forever Free QR Code Generator</div>-->
+                    <div class="qr-container from-blur">
+                        <div class="qr-panel">
+                            <div class="qr-layout">
+                                <div class="qr-layout__main">
+                                    <div class="qr-builder">
+                                        <fieldset class="qr-switch" aria-label="QR content type">
+
+                                            <label class="qr-switch__option">
+                                                <input class="qr-switch__input" type="radio" name="qr-mode" value="text" checked>
+                                                <span class="qr-switch__text">Link / Text</span>
+                                            </label>
+
+                                            <label class="qr-switch__option">
+                                                <input class="qr-switch__input" type="radio" name="qr-mode" value="vcard">
+                                                <span class="qr-switch__text">vCard</span>
+                                            </label>
+                                        </fieldset>
+
+                                        <div class="qr-builder__panel" data-qr-mode-panel="text">
+                                            <label class="qr-field qr-field_large" for="qr-text-value">
+                                                <input class="qr-field__input qr-field__input_large" id="qr-text-value" name="qr-text-value" type="text" placeholder="https://example.com" spellcheck="false" enterkeyhint="go" autocomplete="off">
+                                                <span class="qr-field__hint">Type text, url, or smthng and press enter ⏎</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="qr-builder__panel" data-qr-mode-panel="vcard" hidden>
+                                            <div class="qr-grid">
+                                                <label class="qr-field" for="qr-vcard-first-name">
+                                                    <span class="qr-field__label">First Name</span>
+                                                    <input class="qr-field__input" id="qr-vcard-first-name" name="qr-vcard-first-name" type="text" autocomplete="given-name">
+                                                </label>
+
+                                                <label class="qr-field" for="qr-vcard-last-name">
+                                                    <span class="qr-field__label">Last Name</span>
+                                                    <input class="qr-field__input" id="qr-vcard-last-name" name="qr-vcard-last-name" type="text" autocomplete="family-name">
+                                                </label>
+
+                                                <label class="qr-field" for="qr-vcard-phone">
+                                                    <span class="qr-field__label">Phone</span>
+                                                    <input class="qr-field__input" id="qr-vcard-phone" name="qr-vcard-phone" type="tel" autocomplete="tel">
+                                                </label>
+
+                                                <label class="qr-field" for="qr-vcard-email">
+                                                    <span class="qr-field__label">Email</span>
+                                                    <input class="qr-field__input" id="qr-vcard-email" name="qr-vcard-email" type="email" autocomplete="email">
+                                                </label>
+
+                                                <label class="qr-field" for="qr-vcard-company">
+                                                    <span class="qr-field__label">Company</span>
+                                                    <input class="qr-field__input" id="qr-vcard-company" name="qr-vcard-company" type="text" autocomplete="organization">
+                                                </label>
+
+                                                <label class="qr-field" for="qr-vcard-title">
+                                                    <span class="qr-field__label">Job Title</span>
+                                                    <input class="qr-field__input" id="qr-vcard-title" name="qr-vcard-title" type="text" autocomplete="organization-title">
+                                                </label>
+
+                                                <label class="qr-field" for="qr-vcard-website">
+                                                    <span class="qr-field__label">Website</span>
+                                                    <input class="qr-field__input" id="qr-vcard-website" name="qr-vcard-website" type="url" autocomplete="url">
+                                                </label>
+
+                                                <label class="qr-field qr-field_full" for="qr-vcard-address">
+                                                    <span class="qr-field__label">Address</span>
+                                                    <input class="qr-field__input" id="qr-vcard-address" name="qr-vcard-address" type="text" autocomplete="street-address">
+                                                </label>
+
+                                                <label class="qr-field qr-field_full" for="qr-vcard-note">
+                                                    <span class="qr-field__label">Note</span>
+                                                    <input class="qr-field__input" id="qr-vcard-note" name="qr-vcard-note" type="text">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <aside class="qr-preview" aria-live="polite">
+                                    <div class="qr-preview__card">
+                                        <div class="qr-preview__canvas" data-qr-output>
+                                            <div class="qr-preview__placeholder">Enter text or fill the vCard fields to generate a QR code.</div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="qr-preview__status" data-qr-status>Waiting for content.</div>
+                                    </div>
+
+                                    <div class="qr-preview__actions">
+                                        <a class="qr-button qr-button_secondary" data-qr-download href="#" download="qr-code.png" hidden>Download PNG 1500×1500</a>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-bg">
+                    <video preload autoplay muted playsinline loop poster="">
+                        <source src="../img/bg-video-2.mp4" type="video/mp4">
+                        <source src="../img/bg-video-2.webm" type="video/webm">
+                    </video>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="wrap">
+                    <div class="footer__side">Denys Tarabanov</div>
+                    <span class="copyright">©</span>2026 - <span id="year"></span>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="wrap">
+            <div class="menu">
+                <a class="menu__item" href="../">Home</a>
+                <a class="menu__item" href="../#experience">Experience</a>
+                <a class="menu__item" href="../works/">Works</a>
+                <a class="menu__item" href="../#resume">Resume</a>
+                <a class="menu__item" href="../#contacts">Contacts</a>
+                <a class="menu__item" href="/">Free QR generator</a>
+            </div>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/tarabanov/" target="_blank" class="links__item">LinkedIn<span class="ico ico-external"></span></a>
+                <a href="https://dribbble.com/tarabanov" target="_blank" class="links__item">Dribble<span class="ico ico-external"></span></a>
+                <a href="https://www.behance.net/DenisTarabanov" target="_blank" class="links__item">Behance<span class="ico ico-external"></span></a>
+            </div>
+        </div>
+        <div class="nav__bg"></div>
+    </nav>
+</div>
+
+</body>
+</html>
