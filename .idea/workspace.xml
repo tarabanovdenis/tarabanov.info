@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="242ae678-5b8e-44d3-9da1-d32d4af6b048" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tarabanov.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="242ae678-5b8e-44d3-9da1-d32d4af6b048" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773344704371</updated>
       <workItem from="1773344705471" duration="671000" />
-      <workItem from="1773345620214" duration="144000" />
+      <workItem from="1773345620214" duration="248000" />
     </task>
     <servers />
   </component>
